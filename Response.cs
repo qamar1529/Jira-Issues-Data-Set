@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GitHubBugReportDateSet
+namespace JiraIssuesDataSet
 {
     [DataContract(Name = "response")]
     public class Response

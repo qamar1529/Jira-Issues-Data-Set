@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GitHubBugReportDateSet
+namespace JiraIssuesDataSet
 {
     public class User
     {

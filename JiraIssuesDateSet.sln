@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubBugReportDateSet", "GitHubBugReportDateSet.csproj", "{F4091D6D-B062-43B1-AE54-195B0BE29CBD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JiraIssuesDataSet", "JiraIssuesDataSet.csproj", "{F4091D6D-B062-43B1-AE54-195B0BE29CBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

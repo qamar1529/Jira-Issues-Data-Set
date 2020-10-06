@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F4091D6D-B062-43B1-AE54-195B0BE29CBD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GitHubBugReportDateSet</RootNamespace>
-    <AssemblyName>GitHubBugReportDateSet</AssemblyName>
+    <RootNamespace>JiraIssuesDataSet</RootNamespace>
+    <AssemblyName>JiraIssuesDataSet</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

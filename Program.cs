@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace GitHubBugReportDateSet
+namespace JiraIssuesDataSet
 {
     class Program
     {
@@ -30,7 +30,7 @@ namespace GitHubBugReportDateSet
                     
                     do
                     {
-                        string tempUrl = url + issueType + "&maxResults=1000&expand=changelog&startAt=" + start;
+                        string tempUrl = url + issueType + "&maxResults=10&expand=changelog&startAt=" + start;
                         string responseJson = GetReponseFromURL(tempUrl);
                         if (!string.IsNullOrEmpty(responseJson))
                         {
@@ -92,7 +92,7 @@ namespace GitHubBugReportDateSet
                                             }
                                             catch (Exception ex)
                                             {
-                                                File.WriteAllText(@"C:\Users\halfb\source\repos\GitHubBugReportDateSet\Exception" + DateTime.Now.Ticks + ".txt", JsonConvert.SerializeObject(ex));
+                                                File.WriteAllText(@"C:\Users\halfb\source\repos\JiraIssuesDataSet\Exception" + DateTime.Now.Ticks + ".txt", JsonConvert.SerializeObject(ex));
                                             }
                                         }
                                     }
@@ -105,12 +105,12 @@ namespace GitHubBugReportDateSet
                 }
                 if (allIssues != null && allIssues.Count > 0)
                 {
-                    File.WriteAllText(@"C:\Users\halfb\source\repos\GitHubBugReportDateSet\Dataset.txt", JsonConvert.SerializeObject(allIssues));
+                    File.WriteAllText(@"C:\Users\halfb\source\repos\JiraIssuesDataSet\Dataset.txt", JsonConvert.SerializeObject(allIssues));
                 }
             }
             catch (Exception ex)
             {
-                File.WriteAllText(@"C:\Users\halfb\source\repos\GitHubBugReportDateSet\Exception.txt", JsonConvert.SerializeObject(ex));
+                File.WriteAllText(@"C:\Users\halfb\source\repos\JiraIssuesDataSet\Exception.txt", JsonConvert.SerializeObject(ex));
             }
         }
 
@@ -140,7 +140,7 @@ namespace GitHubBugReportDateSet
             }
             catch (Exception ex)
             {
-                File.WriteAllText(@"C:\Users\halfb\source\repos\GitHubBugReportDateSet\Exception" + DateTime.Now.Ticks + ".txt", JsonConvert.SerializeObject(ex));
+                File.WriteAllText(@"C:\Users\halfb\source\repos\JiraIssuesDataSet\Exception" + DateTime.Now.Ticks + ".txt", JsonConvert.SerializeObject(ex));
             }
         }
 
@@ -165,7 +165,7 @@ namespace GitHubBugReportDateSet
             }
             catch (Exception ex)
             {
-                File.WriteAllText(@"C:\Users\halfb\source\repos\GitHubBugReportDateSet\Exception" + DateTime.Now.Ticks + ".txt", JsonConvert.SerializeObject(ex));
+                File.WriteAllText(@"C:\Users\halfb\source\repos\JiraIssuesDataSet\Exception" + DateTime.Now.Ticks + ".txt", JsonConvert.SerializeObject(ex));
             }
             return comments;
         }
