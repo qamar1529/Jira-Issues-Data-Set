@@ -30,7 +30,7 @@ namespace JiraIssuesDataSet
                     
                     do
                     {
-                        string tempUrl = url + issueType + "&maxResults=10&expand=changelog&startAt=" + start;
+                        string tempUrl = url + issueType + "&maxResults=1000&expand=changelog&startAt=" + start;
                         string responseJson = GetReponseFromURL(tempUrl);
                         if (!string.IsNullOrEmpty(responseJson))
                         {
